@@ -2,43 +2,62 @@
 {
   "model": "menu.pizza",
   "pk": 1,
-  "fields": {
-    "toppings": [
-      1
-    ]
-  }
+  "fields": {}
 },
 {
   "model": "menu.pizza",
   "pk": 2,
-  "fields": {
-    "toppings": [
-      2
-    ]
-  }
+  "fields": {}
 },
 {
   "model": "menu.pizza",
   "pk": 3,
-  "fields": {
-    "toppings": [
-      1,
-      2
-    ]
-  }
+  "fields": {}
 },
 {
   "model": "menu.topping",
   "pk": 1,
   "fields": {
-    "name": "Mozzarella"
+    "name": "Prosciutto"
   }
 },
 {
   "model": "menu.topping",
   "pk": 2,
   "fields": {
-    "name": "Prosciutto"
+    "name": "Mozzarella"
+  }
+},
+{
+  "model": "menu.toppingonpizza",
+  "pk": 1,
+  "fields": {
+    "pizza": 1,
+    "topping": 1
+  }
+},
+{
+  "model": "menu.toppingonpizza",
+  "pk": 2,
+  "fields": {
+    "pizza": 2,
+    "topping": 2
+  }
+},
+{
+  "model": "menu.toppingonpizza",
+  "pk": 3,
+  "fields": {
+    "pizza": 3,
+    "topping": 1
+  }
+},
+{
+  "model": "menu.toppingonpizza",
+  "pk": 4,
+  "fields": {
+    "pizza": 3,
+    "topping": 2
   }
 }
 ]

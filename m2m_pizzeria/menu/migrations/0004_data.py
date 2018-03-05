@@ -11,7 +11,7 @@ def load_fixtures(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('menu', '0001_initial'),
+        ('menu', '0003_auto_20180305_1157'),
     ]
 
     operations = [
