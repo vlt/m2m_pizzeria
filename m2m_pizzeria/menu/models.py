@@ -5,6 +5,7 @@ from django.urls import reverse
 class Pizza(models.Model):
     toppings = models.ManyToManyField(
         "Topping",
+        through="ToppingOnPizza",
     )
 
     def __str__(self):
@@ -22,3 +23,14 @@ class Topping(models.Model):
 
     def __repr__(self):
         return str(self)
+
+
+class ToppingOnPizza(models.Model):
+    pizza = models.ForeignKey(
+        "Pizza",
+        on_delete=models.CASCADE,
+    )
+    topping = models.ForeignKey(
+        "Topping",
+        on_delete=models.CASCADE,
+    )
