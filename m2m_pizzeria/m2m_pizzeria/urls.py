@@ -16,6 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import menu.views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path(
+        "",
+        menu.views.PizzaListView.as_view(),
+        name="pizza_list",
+    ),
+    path(
+        "pizza/<int:pk>/",
+        menu.views.PizzaUpdateView.as_view(),
+        name="pizza_update",
+    ),
 ]

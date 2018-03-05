@@ -1,0 +1,44 @@
+[
+{
+  "model": "menu.pizza",
+  "pk": 1,
+  "fields": {
+    "toppings": [
+      1
+    ]
+  }
+},
+{
+  "model": "menu.pizza",
+  "pk": 2,
+  "fields": {
+    "toppings": [
+      2
+    ]
+  }
+},
+{
+  "model": "menu.pizza",
+  "pk": 3,
+  "fields": {
+    "toppings": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "menu.topping",
+  "pk": 1,
+  "fields": {
+    "name": "Mozzarella"
+  }
+},
+{
+  "model": "menu.topping",
+  "pk": 2,
+  "fields": {
+    "name": "Prosciutto"
+  }
+}
+]

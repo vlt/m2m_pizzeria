@@ -1,0 +1,5 @@
+<ul>
+{% for pizza in pizza_list %}
+  <li><a href="{{ pizza.get_absolute_url }}">{{ pizza }}</a></li>
+{% endfor %}
+</ul>

@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import ListView, UpdateView
 
-# Create your views here.
+from menu.models import Pizza
+
+
+class PizzaListView(ListView):
+    model = Pizza
+
+
+class PizzaUpdateView(UpdateView):
+    model = Pizza
+    fields = ["toppings"]
