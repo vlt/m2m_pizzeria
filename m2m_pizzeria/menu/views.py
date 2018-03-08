@@ -1,5 +1,6 @@
 from django.views.generic import ListView, UpdateView
 
+from menu.forms import PizzaForm
 from menu.models import Pizza
 
 
@@ -9,4 +10,4 @@ class PizzaListView(ListView):
 
 class PizzaUpdateView(UpdateView):
     model = Pizza
-    fields = ["toppings"]
+    form_class = PizzaForm
